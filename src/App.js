@@ -1,4 +1,7 @@
+import "./App.css";
 import { useEffect, useState } from "react";
+import Header from "./componentes/Header";
+import Banner from "./componentes/Banner";
 
 export default function App() {
   const [user, setUser] = useState();
@@ -12,7 +15,12 @@ export default function App() {
       });
   }, []);
 
-  console.log(user)
+  console.log(user);
 
-  return <div className="App">{user?<p>deu certo</p>:<p>deu errado</p>}</div>;
+  return (
+    <main className="App">
+      <Header />
+      <Banner ProfileImg={user.img} />
+    </main>
+  );
 }
