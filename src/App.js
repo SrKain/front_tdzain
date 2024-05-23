@@ -4,6 +4,7 @@ import Header from "./componentes/Header";
 import Banner from "./componentes/Banner";
 import Footer from "./componentes/Footer";
 import Content from "./componentes/Content";
+import { useQuery } from "react-query";
 
 export default function App() {
   const [user, setUser] = useState({});
@@ -23,8 +24,8 @@ export default function App() {
     <main className="App">
       <Header userName={user.nome ? user.nome : ""} />
       <Banner user={user.id ? user : {}} />
-      <Content/>
-      <Footer/>
+      <Content user={user.id ? user : {}} />
+      <Footer />
     </main>
   );
 }
