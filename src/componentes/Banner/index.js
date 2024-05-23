@@ -1,10 +1,14 @@
-import styles from './Banner.module.css'
+import styles from "./Banner.module.css";
 
-export default function Banner({ProfileImg}){
-    return(
-        <section className={styles.Banner}>
-            <img src={ProfileImg} alt=''>
-            </img>
-        </section>
-    )
+export default function Banner({ user }) {
+  return (
+    <section
+      className={styles.Banner}
+    >
+      <div className={styles.ImageContainer}>
+        <img className={styles.Img} src={user.img} alt="" />
+      </div>
+      <h2>{user.nome}</h2>
+    </section>
+  );
 }
