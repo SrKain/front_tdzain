@@ -1,8 +1,11 @@
 ## Projeto desenvolvido usando react.js e module.css
+# Aplicação front-end TdZain.
 
 A proposta de uso do react é que a biblioteca react é ideal para interações no DOM tornando o projeto mais dinamico e tornando o desenvolvimento ainda mais otimizado e performático.
 
 O projeto usa também a noção de componentização dos elementos, o que torna as manuntenções de código mais eficientes. Também presente no projeto, o conceito de mobile-first, tendo em vista que 60% ou mais dos usuários de aplicações web na atualidade são mobile, a necessidade de desenvolver usando mobile-first cresce cada dia mais.
+
+Durante o desenvolvimento do projeto, foi usado react-query para consumir a API que também foi desenvolvida por mim, entretanto, em ambiente local (localhost) a aplicação atualizava as informações em tempo real, conforme eu as utilizava, entretanto assim que o deplor foi realizado na vercel, a aplicação deixou de faze o consumo com a mesma eficiência.
 
 ## Available Scripts
 
